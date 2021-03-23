@@ -11,24 +11,18 @@
 
 .Coin-rotate img {
 	transform: rotateY(-360deg);
-	transition: transform 1.5s ease;
 	-webkit-transform: rotateY(-360deg);
 	-moz-transform: rotateY(-360deg);
 	-ms-transform: rotateY(-360deg);
 	-o-transform: rotateY(-360deg);
+	transition: transform 1.5s ease;
 	-moz-transition: transform 1.5s ease;
 	-ms-transition: transform 1.5s ease;
 	-o-transition: transform 1.5s ease;
 	-webkit-transition: transform 1.5s ease;
 }
 
-.Coin-front {
-	position: absolute;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	backface-visibility: hidden;
-}
+.Coin-front,
 .Coin-back {
 	position: absolute;
 	left: 0;
@@ -36,6 +30,7 @@
 	width: 100%;
 	backface-visibility: hidden;
 }
+
 .Coin-front {
 	z-index: 2;
 }
